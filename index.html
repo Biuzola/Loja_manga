@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangá Mania</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/013/993/970/non_2x/illustration-of-a-book-with-a-red-cover-free-png.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="z-3" id="cabecalho">
+        <div class="d-flex flex-wrap justify-content-center p-3">
+
+            <div class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis ps-4">
+                <a href="/" class="text-decoration-none ">
+                    <h1 class="text-light">Mangá Mania</h1>
+                </a>
+            </div>
+
+            <div class="navbar p-2">
+                <div class="container ">
+                    <nav class="justify-content-end" id="">
+                        <ul class="nav nav-underline ">
+                            <li class="nav-item ">
+                                <a href="#inicio" class="nav-link active text-light" aria-current="page">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#livros" class="nav-link text-light">Livros</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main data-bs-spy="scroll" data-bs-target="#cabecalho">
+
+    <!-- Carousel de imagens dos livros -->
+        <section id="inicio">
+            <div class="carousel carousel-fade slide" data-bs-ride="carousel" id="carousel-livrins">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="d-block w-100" src="img/dandadan-banner.jpg" alt="Dandadan">
+                        <div class="carousel-caption">
+                            <h2 class="">Dandadan</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/jujutsu-banner.jpg" alt="Jujustsu Kaisen" data-bs-interval="3000">
+                        <div class="carousel-caption">
+                            <h2 class="">Jujustsu Kaisen</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/sakamoto-banner.jpg" alt="Sakamoto Days" data-bs-interval="3000">
+                        <div class="carousel-caption">
+                            <h2 class="h5">Sakamoto Days</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/fullmetal-banner.jpg" alt="Fullmetal alchemist" data-bs-interval="3000">
+                        <div class="carousel-caption">
+                            <h2 class="h5">Fullmetal Alchemist</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/solo-banner.jpg" alt="Solo Leveling" data-bs-interval="3000">
+                        <div class="carousel-caption">
+                            <h2 class="h5">Solo Leveling</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/dg-banner.jpg" alt="Dungeon Meshi" data-bs-interval="3000">
+                        <div class="carousel-caption">
+                            <h2 class="h5">Dungeon Meshi</h2>
+                        </div>
+                    </div>
+                    
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-livrins" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-livrins" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-livrins" data-bs-slide-to="0" class="active">
+
+                        </button>
+                        <button type="button" data-bs-target="#carousel-livrins" data-bs-slide-to="1">
+
+                        </button>
+                        <button type="button" data-bs-target="#carousel-livrins" data-bs-slide-to="2">
+
+                        </button>
+                        <button type="button" data-bs-target="#carousel-livrins" data-bs-slide-to="3">
+
+                        </button><button type="button" data-bs-target="#carousel-livrins" data-bs-slide-to="4">
+
+                        </button><button type="button" data-bs-target="#carousel-livrins" data-bs-slide-to="5">
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Carousel de imagens dos livros -->
+    <!-- Cards dos livros -->
+        <section id="livros">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 mb-4">    <!-- Dandadan 1 -->
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba1-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba1-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba1-1">
+                                    <img src="img/dandadan1.jpg" alt="Capa Dandadan 1">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Dandadan 1</h4>
+                                        <h6 class="card-subtitle fst-italic">Yukinobu Tatsu</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba1-2">
+                                    <div class="card-content">
+                                        <p class="p-2">Momo Ayase tem uma avó médium e desde criança acreditou no mundo sobrenatural e na existência de espíritos e demônios. Por outro lado, um colega de escola, Ken, sobre bullying e é marginalizado por acreditar em alienígenas. 
+                                            Certo dia, eles se desafiam para provar a existência de suas crenças e acabam entrando em uma confusão entre criaturas ocultas que pode botar toda a humanidade em perigo.
+                                        </p>
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                Públicado em <time>06/04/2021</time>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4 ">   <!-- Dandadan 2 -->
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba2-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba2-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba2-1">
+                                    <img src="img/dandadan2.jpg" alt="Capa Dandadan 2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Dandadan 2</h4>
+                                        <h6 class="card-subtitle fst-italic">Yukinobu Tatsu</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba2-2">
+                                    <div class="card-content">
+                                        <p class="p-2">Momo Ayase tem uma avó médium e desde criança acreditou no mundo sobrenatural e na existência de espíritos e demônios. Por outro lado, um colega de escola, Ken, sobre bullying e é marginalizado por acreditar em alienígenas. 
+                                            Certo dia, eles se desafiam para provar a existência de suas crenças e acabam entrando em uma confusão entre criaturas ocultas que pode botar toda a humanidade em perigo.
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                Públicado em <time>06/04/2021</time>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4">    <!-- Jujustsu 0 -->
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba3-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba3-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba3-1">
+                                    <img src="img/jujutso0.jpg" alt="Capa Jujutsu Kaisen 0">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Jujutsu Kaisen 0</h4>
+                                        <h6 class="card-subtitle fst-italic">Gege Akutami</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba3-2">
+                                    <div class="card-content">
+                                        <p class="p-2">O estudante colegial Yuta Okkotsu deseja ser executado porque sofre com as ações de Rika Orimoto, que foi transformada em espírito amaldiçoado. Enquanto isso, Satoru Gojo, professor que ensina a exorcizar "maldições", transfere Yuta para Escola Técnica Superior de Jujutsu de Tóquio. Tem início a prelúdio da série Jujutsu Kaisen.[1]
+                                        </p>
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                Públicado em <time>03/08/2020</time>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4">    <!-- Jujustsu 1 -->  
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba4-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba4-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba4-1">
+                                    <img src="img/jujutsu1.jpg" alt="Capa Jujutsu Kaisen 1">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Jujutsu Kaisen 1</h4>
+                                        <h6 class="card-subtitle fst-italic">Gege Akutami</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba4-2">
+                                    <div class="card-content">
+                                        <p class="p-2">Em Jujutsu Kaisen, a vida de um adolescente é virada de cabeça para baixo após entrar em contato com um talismã amaldiçoado. No conceituado anime, o adolescente Yuuji Itadori participa de um clube de ocultismo e acaba se envolvendo com um item perigoso, um dedo amaldiçoado. Para proteger seus colegas de um ataque das Maldições, ele engole o dedo e se torna anfitirão da Maldição. Ao invés de sofrer uma sentença de morte imediata, seu professor consegue levá-lo ao Colégio Técnico Metropolitano de Tóquio e elaborar um plano para que ele consuma todos os dedos para se tornar uma Maldição e, enfim, acabar com ela
+                                        </p>
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                Públicado em <time>03/08/2020</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4">    <!-- Sakamoto 1 -->  
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba5-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba5-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba5-1">
+                                    <img src="img/sakamoto1.jpg" alt="Capa Sakamoto Days 1">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Sakamoto Days</h4>
+                                        <h6 class="card-subtitle fst-italic">Yuto Suzuki</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba5-2">
+                                    <div class="card-content">
+                                        <p class="p-2">A história segue Taro Sakamoto, um ex-assassino que se aposentou e se casou com Aoi, uma balconista de uma loja de conveniência.
+                                            Sakamoto ganhou peso e se tornou um homem "plus size", mas ainda possui habilidades e força sobre-humanas. Ele trabalha em uma loja de conveniência, onde conheceu Aoi, e tenta viver uma vida pacífica.
+                                            No entanto, seu passado como assassino o persegue, e ele é constantemente procurado por antigos rivais e inimigos
+                                        </p>
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                Públicado em <time>10/10/2020</time>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4">    <!-- Sakamoto 2 -->
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba6-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba6-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba6-1">
+                                    <img src="img/sakamoto2.jpg" alt="Sakamoto Days 2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Sakamoto Days 2</h4>
+                                        <h6 class="card-subtitle fst-italic">Yuto Suzuki</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba6-2">
+                                    <div class="card-content">
+                                        <p class="p-2">A história segue Taro Sakamoto, um ex-assassino que se aposentou e se casou com Aoi, uma balconista de uma loja de conveniência.
+                                            Sakamoto ganhou peso e se tornou um homem "plus size", mas ainda possui habilidades e força sobre-humanas. Ele trabalha em uma loja de conveniência, onde conheceu Aoi, e tenta viver uma vida pacífica.
+                                            No entanto, seu passado como assassino o persegue, e ele é constantemente procurado por antigos rivais e inimigos
+                                        </p>
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                Públicado em <time>10/10/2020</time>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4">    <!-- Fullmetal 1 -->
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba7-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba7-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba7-1">
+                                    <img src="img/fullmetal1.jpg" alt="Capa Fullmetal alchemist">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Fullmetal alchemist 1</h4>
+                                        <h6 class="card-subtitle fst-italic">Hiromu Arakawa</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba7-2">
+                                    <div class="card-content">
+                                        <p class="p-2">Os irmãos Edward e Al Elric praticam o tabu da transmutação humana e pagam caro por isso. Edward perde um braço e uma perna e Al perde o corpo todo. Os dois crescem e decidem sair pelo mundo em busca de uma maneira de consertar o que fizeram.
+                                        </p>
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                Públicado em <time>Agosto/2001</time>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4">    <!-- Fullmetal 2 -->
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba8-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba8-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba8-1">
+                                    <img src="img/fullmetal2.jpg" alt="Capa Fullmetal alchemist 2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Fullmetal alchemist 2</h4>
+                                        <h6 class="card-subtitle fst-italic">Hiromu Arakawa</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba8-2">
+                                    <div class="card-content">
+                                        <p class="p-2">Os irmãos Edward e Al Elric praticam o tabu da transmutação humana e pagam caro por isso. Edward perde um braço e uma perna e Al perde o corpo todo. Os dois crescem e decidem sair pelo mundo em busca de uma maneira de consertar o que fizeram.
+                                        </p>
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                Públicado em <time>Agosto/2001</time>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4">    <!-- Solo Leveling 1 -->
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba9-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba9-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba9-1">
+                                    <img src="img/solo1.jpg" alt="Capa Solo levelin 1">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Solo Leveling 1</h4>
+                                        <h6 class="card-subtitle fst-italic">Chu-Gong</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba9-2">
+                                    <div class="card-content">
+                                        <p class="p-2">Em um mundo onde portais conectam a Terra a dimensões cheias de monstros, pessoas comuns ganharam poderes e se tornaram caçadores para enfrentar essas ameaças. Jinwoo Sung é conhecido como o "Caçador mais fraco", mal conseguindo sobreviver em missões de baixo nível. Ele é frequentemente desprezado por sua falta de habilidade.
+                                            Durante uma expedição em um "calabouço duplo", Jinwoo e seu grupo caem em uma armadilha mortal. Ele sacrifica sua vida para salvar os outros, mas, em vez de morrer, desperta com um sistema misterioso que o transforma em um "Jogador". Com esse sistema, Jinwoo pode treinar, ganhar níveis e melhorar suas habilidades como se estivesse em um jogo de RPG.
+                                        </p>
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                Públicado em <time>25/07/2016</time>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4">    <!-- Solo Leveling 2 -->
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba10-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba10-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba10-1">
+                                    <img src="img/solo2.jpg" alt="Capa Solo Leveling 2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Solo Leveling 2</h4>
+                                        <h6 class="card-subtitle fst-italic">Chu-Gong</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba10-2">
+                                    <div class="card-content">
+                                        <p class="p-2">Em um mundo onde portais conectam a Terra a dimensões cheias de monstros, pessoas comuns ganharam poderes e se tornaram caçadores para enfrentar essas ameaças. Jinwoo Sung é conhecido como o "Caçador mais fraco", mal conseguindo sobreviver em missões de baixo nível. Ele é frequentemente desprezado por sua falta de habilidade.
+                                            Durante uma expedição em um "calabouço duplo", Jinwoo e seu grupo caem em uma armadilha mortal. Ele sacrifica sua vida para salvar os outros, mas, em vez de morrer, desperta com um sistema misterioso que o transforma em um "Jogador". Com esse sistema, Jinwoo pode treinar, ganhar níveis e melhorar suas habilidades como se estivesse em um jogo de RPG.
+                                        </p>
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                Públicado em <time>25/07/2016</time>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4">
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba11-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba11-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba11-1">
+                                    <img src="img/dg1.jpg" alt="Capa Dungeon Meshi">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Dungeon Meshi 1</h4>
+                                        <h6 class="card-subtitle fst-italic">Ryoko Kui</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba11-2">
+                                    <div class="card-content">
+                                        <p class="p-2">Dungeon Meshi é um mangá e anime ambientado em um mundo de fantasia medieval, onde grupos de aventureiros partem em expedições para explorar masmorras. Eles precisam caçar monstros e cozinhá-los para sobreviver, com ajuda do anão guerreiro Senshi, que possui experiência de sobrevivência e é um ótimo cozinheiro.
+                                        </p>
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                Públicado em <time>15/02/2014</time>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4">
+                        <div class="card mb-3">
+                            <nav class="nav nav-tabs">
+                                <button data-bs-toggle="tab" data-bs-target="#aba12-1" type="button" class="nav-link active">Capa</button>
+                                <button data-bs-toggle="tab" data-bs-target="#aba12-2" type="button" class="nav-link">Sinopse</button>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="aba12-1">
+                                    <img src="img/dg2.jpg" alt="Capa Dungeon Meshi">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Dungeon Meshi 2</h4>
+                                        <h6 class="card-subtitle fst-italic">Ryoko Kui</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aba12-2">
+                                    <div class="card-content">
+                                        <p class="p-2">Dungeon Meshi é um mangá e anime ambientado em um mundo de fantasia medieval, onde grupos de aventureiros partem em expedições para explorar masmorras. Eles precisam caçar monstros e cozinhá-los para sobreviver, com ajuda do anão guerreiro Senshi, que possui experiência de sobrevivência e é um ótimo cozinheiro.
+                                        </p>
+                                        <a href="#" class="btn btn-link">Leia mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                Públicado em <time>15/02/2014</time>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Cards dos livros -->
+    </main>
+    <footer>
+        <div class="d-flex flex-wrap justify-content-center p-3 text-light">
+            <p>Mangá Mania &copy; - <time>Dezembro de 2024</time> - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
